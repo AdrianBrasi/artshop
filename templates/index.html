@@ -16,28 +16,19 @@
 				</div>
 				<!--Navigation Buttons-->
 				<nav class="navbar-menu">
-					<button class="nav-button" hx-get="/home" hx-target="#message" hx-swap="innerHTML">
-						Home
-					</button>
-					<button class="nav-button" hx-get="/gallery" hx-target="#message" hx-swap="innerHTML">
-						Gallery
-					</button>
-					<button class="nav-button" hx-get="/about" hx-target="#message" hx-swap="innerHTML">
-						About
-					</button>
-					<button class="nav-button" hx-get="/contact" hx-target="#message" hx-swap="innerHTML">
-						Contact
-					</button>
-					<button class="nav-button" hx-get="/cart" hx-target="#message" hx-swap="innerHTML">
-						Cart
-					</button>
+					<a href="/" class="nav-button">Home</a>
+					<a href="/gallery" class="nav-button">Gallery</a>
+					<a href="/about" class="nav-button">About</a>
+					<a href="/contact" class="nav-button">Contact</a>
+					<a href="/cart" class="nav-button">🛒 Cart</a>
 				</nav>
 			</div>
 		</header>
 
-		<main>
-			<h1>Welcome to Angie's Art Shop</h1>
-			<div id="message"></div>
+		<main> 
+			<div class="overlay">
+				<a href="/gallery", class="shop-button">Shop Now</a>
+			</div>
 		</main>
 	</body>
 </html>
