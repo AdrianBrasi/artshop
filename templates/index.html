@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Angie's Art Shop</title>
+		<script src="https://unpkg.com/htmx.org@1.9.2"></script>
+		<link rel="stylesheet" href="/static/css/styles.css">
+	</head>
+	<body>
+		<!--Navigation bar-->
+		<header class="navbar">
+			<div class="navbar-container">
+				<!--Title-->
+				<div class="navbar-brand">
+					<a href="/">Art by Angelina</a>
+				</div>
+				<!--Navigation Buttons-->
+				<nav class="navbar-menu">
+					<button class="nav-button" hx-get="/home" hx-target="#message" hx-swap="innerHTML">
+						Home
+					</button>
+					<button class="nav-button" hx-get="/gallery" hx-target="#message" hx-swap="innerHTML">
+						Gallery
+					</button>
+					<button class="nav-button" hx-get="/about" hx-target="#message" hx-swap="innerHTML">
+						About
+					</button>
+					<button class="nav-button" hx-get="/contact" hx-target="#message" hx-swap="innerHTML">
+						Contact
+					</button>
+					<button class="nav-button" hx-get="/cart" hx-target="#message" hx-swap="innerHTML">
+						Cart
+					</button>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<h1>Welcome to Angie's Art Shop</h1>
+			<div id="message"></div>
+		</main>
+	</body>
+</html>
