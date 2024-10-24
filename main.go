@@ -17,6 +17,7 @@ func main() {
 	http.HandleFunc("/cart", cartHandler)
 
 	log.Println("Server starting at http://localhost:8080")
+	dbinfo()
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Fatal(err)
